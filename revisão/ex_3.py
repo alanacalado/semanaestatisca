@@ -1,32 +1,38 @@
-import os
-import time 
+from ex_4 import Calculadora
 
-while True:
+# programação estruturada e modular
+# 1979 linguagem C
+# Denis M. Richie
+"""
+main
+"""
+"""
+Pequenos dispositivos
+Java
+Appl
+"""
 
-    os.system('cls') 
-    nome = input("Informe o nome para calcular o imc ou deixe em branco para sair: ")
 
-    if nome != "":
-        altura = float(input("Digite a sua altura: ").replace(',','.').strip())
-        os.system('cls')
-        peso = float(input("Digite o seu peso: ").replace(',','.').strip())
-        os.system('cls') 
 
-        imc = peso / (altura * altura)
-    
-        if  imc  < 17:
-            print(f"{nome} está com anorexia.")
-        elif imc < 18.5:
-            print(f"{nome} está abaixo do peso") 
-        elif  imc  < 25:
-            print(f"{nome} está no peso ideal.")
-        elif imc < 30:
-            print(f"{nome} está acima do peso.")
-        elif imc  < 35:
-            print(f"{nome} está com grau de obesidade I.")
-        elif imc < 40.5:
-            print(f"{nome} está com grau de obesidade II.")
-        else:  
-            print(f"{nome} está com grau de obesidade mórbida.")
-    else:
-        break
+
+
+
+"""
+paradigma funcional
+soma - lambda x,y = x+y
+soma(x,y)
+"""
+
+# década de 70
+def somar (x,y):
+    return x+y
+print(somar(10,10))
+
+# década de 90
+c= Calculadora (10,10)
+print(c.somar())
+
+# boom do funcional
+# F#, R, Python, Julia (Biotecnologia,Nanotec)
+somar_numeros = lambda x,y: x+y
+somar_numeros = 
